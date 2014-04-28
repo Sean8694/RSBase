@@ -5,6 +5,6 @@
 //  Copyright (c) 2014年 Sean. All rights reserved.
 //
 
-#import "BaseClass/RSBaseClass.h"
+#import "RSBaseClass.h"
 
-#import "UIAddition/RSUIAddition.h"
+#import "RSUIAddition.h"
