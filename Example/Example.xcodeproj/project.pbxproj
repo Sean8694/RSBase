@@ -22,6 +22,7 @@
 		4C643602190E1E0F0019959C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C643600190E1E0F0019959C /* InfoPlist.strings */; };
 		4C643604190E1E0F0019959C /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C643603190E1E0F0019959C /* ExampleTests.m */; };
 		4C643614190E1E800019959C /* UIView+FrameAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C643613190E1E800019959C /* UIView+FrameAddition.m */; };
+		4C64365E190E3DF30019959C /* RSSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64365D190E3DF30019959C /* RSSingletonObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,11 @@
 		4C643603190E1E0F0019959C /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		4C643612190E1E800019959C /* UIView+FrameAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAddition.h"; sourceTree = "<group>"; };
 		4C643613190E1E800019959C /* UIView+FrameAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAddition.m"; sourceTree = "<group>"; };
+		4C64365B190E3DF30019959C /* RSBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBaseClass.h; sourceTree = "<group>"; };
+		4C64365C190E3DF30019959C /* RSSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSingletonObject.h; sourceTree = "<group>"; };
+		4C64365D190E3DF30019959C /* RSSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSingletonObject.m; sourceTree = "<group>"; };
+		4C64365F190E3EA70019959C /* RSBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSBase.h; sourceTree = "<group>"; };
+		4C643660190E3EFB0019959C /* RSUIAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSUIAddition.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,8 @@
 		4C643610190E1E800019959C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				4C64365F190E3EA70019959C /* RSBase.h */,
+				4C64365A190E3DF30019959C /* BaseClass */,
 				4C643611190E1E800019959C /* UIAddition */,
 			);
 			name = Base;
@@ -168,10 +176,21 @@
 		4C643611190E1E800019959C /* UIAddition */ = {
 			isa = PBXGroup;
 			children = (
+				4C643660190E3EFB0019959C /* RSUIAddition.h */,
 				4C643612190E1E800019959C /* UIView+FrameAddition.h */,
 				4C643613190E1E800019959C /* UIView+FrameAddition.m */,
 			);
 			path = UIAddition;
+			sourceTree = "<group>";
+		};
+		4C64365A190E3DF30019959C /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				4C64365B190E3DF30019959C /* RSBaseClass.h */,
+				4C64365C190E3DF30019959C /* RSSingletonObject.h */,
+				4C64365D190E3DF30019959C /* RSSingletonObject.m */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +294,7 @@
 				4C6435EF190E1E0E0019959C /* ViewController.m in Sources */,
 				4C6435E9190E1E0E0019959C /* AppDelegate.m in Sources */,
 				4C6435E5190E1E0E0019959C /* main.m in Sources */,
+				4C64365E190E3DF30019959C /* RSSingletonObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +499,7 @@
 				4C643609190E1E0F0019959C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C64360A190E1E0F0019959C /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +508,7 @@
 				4C64360C190E1E0F0019959C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

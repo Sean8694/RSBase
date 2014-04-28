@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/Sean8694/RSBase'
   s.authors  = 'Sean'
   s.source   = { :git => 'https://github.com/Sean8694/RSBase.git', :tag => '0.0.1' }
-  s.source_files = 'Base'
+  s.source_files = 'Base/*.{h,m}', 'Base/BaseClass/*.{h,m}', 'Base/UIAddition/*.{h,m}'
   s.requires_arc = true
   s.ios.deployment_target = '5.0'
 end
