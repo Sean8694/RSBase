@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C5DF6B9190E47DC00B82E78 /* RSDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF6B8190E47DC00B82E78 /* RSDataItem.m */; };
 		4C6435D9190E1E0E0019959C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6435D8190E1E0E0019959C /* Foundation.framework */; };
 		4C6435DB190E1E0E0019959C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6435DA190E1E0E0019959C /* CoreGraphics.framework */; };
 		4C6435DD190E1E0E0019959C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6435DC190E1E0E0019959C /* UIKit.framework */; };
@@ -23,6 +24,8 @@
 		4C643604190E1E0F0019959C /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C643603190E1E0F0019959C /* ExampleTests.m */; };
 		4C643614190E1E800019959C /* UIView+FrameAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C643613190E1E800019959C /* UIView+FrameAddition.m */; };
 		4C64365E190E3DF30019959C /* RSSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64365D190E3DF30019959C /* RSSingletonObject.m */; };
+		4C94487F190F80A6001D959C /* RSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C94487E190F80A6001D959C /* RSArray.m */; };
+		4C944882190F80C3001D959C /* RSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C944881190F80C3001D959C /* RSDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C5DF6B6190E46F600B82E78 /* RSBaseClassProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSBaseClassProtocol.h; sourceTree = "<group>"; };
+		4C5DF6B7190E47DC00B82E78 /* RSDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDataItem.h; sourceTree = "<group>"; };
+		4C5DF6B8190E47DC00B82E78 /* RSDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDataItem.m; sourceTree = "<group>"; };
 		4C6435D5190E1E0E0019959C /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6435D8190E1E0E0019959C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C6435DA190E1E0E0019959C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +68,10 @@
 		4C64365D190E3DF30019959C /* RSSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSingletonObject.m; sourceTree = "<group>"; };
 		4C64365F190E3EA70019959C /* RSBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSBase.h; sourceTree = "<group>"; };
 		4C643660190E3EFB0019959C /* RSUIAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSUIAddition.h; sourceTree = "<group>"; };
+		4C94487D190F80A6001D959C /* RSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSArray.h; sourceTree = "<group>"; };
+		4C94487E190F80A6001D959C /* RSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSArray.m; sourceTree = "<group>"; };
+		4C944880190F80C3001D959C /* RSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDictionary.h; sourceTree = "<group>"; };
+		4C944881190F80C3001D959C /* RSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +197,15 @@
 			isa = PBXGroup;
 			children = (
 				4C64365B190E3DF30019959C /* RSBaseClass.h */,
+				4C5DF6B6190E46F600B82E78 /* RSBaseClassProtocol.h */,
 				4C64365C190E3DF30019959C /* RSSingletonObject.h */,
 				4C64365D190E3DF30019959C /* RSSingletonObject.m */,
+				4C5DF6B7190E47DC00B82E78 /* RSDataItem.h */,
+				4C5DF6B8190E47DC00B82E78 /* RSDataItem.m */,
+				4C94487D190F80A6001D959C /* RSArray.h */,
+				4C94487E190F80A6001D959C /* RSArray.m */,
+				4C944880190F80C3001D959C /* RSDictionary.h */,
+				4C944881190F80C3001D959C /* RSDictionary.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -291,8 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C643614190E1E800019959C /* UIView+FrameAddition.m in Sources */,
+				4C94487F190F80A6001D959C /* RSArray.m in Sources */,
 				4C6435EF190E1E0E0019959C /* ViewController.m in Sources */,
 				4C6435E9190E1E0E0019959C /* AppDelegate.m in Sources */,
+				4C944882190F80C3001D959C /* RSDictionary.m in Sources */,
+				4C5DF6B9190E47DC00B82E78 /* RSDataItem.m in Sources */,
 				4C6435E5190E1E0E0019959C /* main.m in Sources */,
 				4C64365E190E3DF30019959C /* RSSingletonObject.m in Sources */,
 			);

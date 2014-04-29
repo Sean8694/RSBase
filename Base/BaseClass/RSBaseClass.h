@@ -6,3 +6,6 @@
 //
 
 #import "RSSingletonObject.h"
+#import "RSDataItem.h"
+#import "RSArray.h"
+#import "RSDictionary.h"
